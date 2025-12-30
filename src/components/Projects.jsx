@@ -7,8 +7,8 @@ function Projects() {
             opacity: 1,
             x: 0,
             transition: {
-                delay: i * 0.2,
-                duration: 0.6,
+                delay: i * 0.1,
+                duration: 0.3,
                 ease: "easeOut"
             }
         })
@@ -21,7 +21,7 @@ function Projects() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
         >
             <h2 className="section-title">Experience & Projects</h2>
             <div className="projects-grid">
