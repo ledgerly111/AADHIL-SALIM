@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 function Projects() {
     const cardVariants = {
-        hidden: { opacity: 0, x: -50 },
+        hidden: { opacity: 0, y: 30 },
         visible: (i) => ({
             opacity: 1,
-            x: 0,
+            y: 0,
             transition: {
                 delay: i * 0.1,
                 duration: 0.3,
