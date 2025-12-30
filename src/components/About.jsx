@@ -1,6 +1,15 @@
+import { motion } from 'framer-motion';
+
 function About() {
   return (
-    <section id="about" className="section-container">
+    <motion.section
+      id="about"
+      className="section-container"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <h2 className="section-title">About Me</h2>
       <div className="about-content">
         <p className="about-text">
@@ -29,8 +38,9 @@ function About() {
           <span className="skill-tag">AI Automation</span>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
 export default About;
+```
