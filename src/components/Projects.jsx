@@ -38,6 +38,18 @@ function Projects() {
                         </p>
                     </div>
                 </div>
+
+                <div className="project-card">
+                    <img src="/webdesign-project.png" alt="Web Design" className="project-image-placeholder" />
+                    <div className="project-info">
+                        <h3>Web Design & Development</h3>
+                        <p style={{ fontStyle: 'italic', marginBottom: '10px', color: '#94a3b8' }}>2024 – Present</p>
+                        <p>
+                            Creating modern, responsive websites with clean design and user-friendly interfaces.
+                            Proficient in HTML, CSS, JavaScript, and React for building dynamic web applications.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     );
