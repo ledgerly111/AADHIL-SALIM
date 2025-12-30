@@ -261,6 +261,41 @@ body {
   color: var(--primary-color);
 }
 
+.greeting-text {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.name-animate {
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 4px 4px 0px rgba(214, 40, 40, 0.2),
+      0 0 20px rgba(247, 127, 0, 0.3);
+  }
+
+  to {
+    text-shadow: 4px 4px 0px rgba(214, 40, 40, 0.3),
+      0 0 40px rgba(247, 127, 0, 0.6),
+      0 0 60px rgba(247, 127, 0, 0.4);
+  }
+}
+
 .gradient-text {
   color: var(--secondary-color);
   font-weight: 700;
